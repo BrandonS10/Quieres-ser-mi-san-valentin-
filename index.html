@@ -651,20 +651,15 @@
 </head>
 <body>
 
-  <!-- FLOATING HEARTS -->
   <div class="hearts-container" id="heartsContainer"></div>
 
-  <!-- PROGRESS -->
   <div class="progress" id="progress"></div>
 
-  <!-- ========== STEP 0: VALENTINE QUESTION ========== -->
   <div class="step active" id="step0">
-    <!-- Stars BG -->
     <div class="stars-container" id="step0Stars"></div>
 
     <div id="nicknameLabel" class="nickname cursive" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Mi vida...</div>
 
-    <!-- Big heart with orbit -->
     <div class="orbit-container" style="width: 160px; height: 160px; margin-bottom: 1rem;">
       <div class="orbit-ring" style="width: 150px; height: 150px;">
         <div class="orbit-dot" style="top: -4px; left: 50%;"></div>
@@ -704,7 +699,6 @@
     <p id="noCounter" style="color: var(--text-light); font-size: 0.8rem; margin-top: 1.5rem; opacity: 0; transition: opacity 0.3s;"></p>
   </div>
 
-  <!-- ========== STEP 1: PHOTOS OF US ========== -->
   <div class="step" id="step1">
     <div class="section-intro">
       <span class="section-step-num">Paso 1 de 8</span>
@@ -751,7 +745,6 @@
     <button class="btn-continue" onclick="goToStep(2)">Seguir leyendo</button>
   </div>
 
-  <!-- ========== STEP 2: LOVE MESSAGE ========== -->
   <div class="step" id="step2">
     <div class="section-intro">
       <span class="section-step-num">Paso 2 de 8</span>
@@ -787,7 +780,6 @@
     </button>
   </div>
 
-  <!-- ========== STEP 3: CHOOSE GAME ========== -->
   <div class="step" id="step3">
     <div class="section-intro">
       <span class="section-step-num">Paso 3 de 8</span>
@@ -827,7 +819,6 @@
     <button class="btn-continue" id="btnGameContinue" style="display: none;" onclick="goToStep(4)">Continuar</button>
   </div>
 
-  <!-- ========== STEP 4: GAME PHOTOS ========== -->
   <div class="step" id="step4">
     <div class="section-intro">
       <span class="section-step-num">Paso 4 de 8</span>
@@ -844,7 +835,6 @@
 
     <p style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;" id="gamePhotosSub">Los mejores momentos gamer juntos</p>
 
-    <!-- FF photos -->
     <div class="game-photos-grid stagger-in" id="ffPhotos" style="display: none;">
       <div class="game-photo-frame">
         <img src="ff1.jpeg" alt="Free Fire 1" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=photo-placeholder>ff1.jpg</div>';">
@@ -857,7 +847,6 @@
       </div>
     </div>
 
-    <!-- MC photos -->
     <div class="game-photos-grid stagger-in" id="mcPhotos" style="display: none;">
       <div class="game-photo-frame">
         <img src="mc1.jpeg" alt="Minecraft 1" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=photo-placeholder>mc1.jpg</div>';">
@@ -881,7 +870,6 @@
     <button class="btn-continue" onclick="goToStep(5)">Seguir</button>
   </div>
 
-  <!-- ========== STEP 5: YOUR LONG PERSONAL TEXT ========== -->
   <div class="step" id="step5">
     <div class="section-intro">
       <span class="section-step-num">Paso 5 de 8</span>
@@ -900,10 +888,6 @@
       <span class="letter-deco tl">&#10084;</span>
       <span class="letter-deco br">&#10084;</span>
 
-      <!-- ====================================================
-           AQUI VA TU TEXTO LARGO PERSONAL
-           Cambia todo lo que esta dentro de este parrafo
-           ==================================================== -->
       <p id="longPersonalText" style="color: var(--text); line-height: 2; font-size: 1.05rem; text-align: center;">
         Primero que nada mi amor, lo siento muchote, se que hice muchas cosas malas, actue mal, y pues por eso mismo me voy a arrodillar para pedirte perdon,
         gracias por estar conmigo a pesar de haber sido un completo idiota, te amo y quiero mucho mi vida:( eres lo mas lindo y siempre seras lo mas lindo.
@@ -923,7 +907,6 @@
     <button class="btn-continue" onclick="goToStep(6)" style="margin-top: 1.5rem;">Continuar</button>
   </div>
 
-  <!-- ========== STEP 6: DATE + FOOD ========== -->
   <div class="step" id="step6">
     <div class="section-intro">
       <span class="section-step-num">Paso 6 de 8</span>
@@ -950,7 +933,6 @@
     <p style="color: var(--text-light); margin-bottom: 1rem; font-size: 1.05rem;">25 de Febrero, solo tu y yo <span class="mini-heart">&#10084;</span></p>
 
     <div class="card" style="padding: 2rem;">
-      <!-- Date details at top -->
       <div style="display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 1.25rem;">
         <div class="date-detail">
           <span class="date-detail-icon">&#128197;</span>
@@ -995,7 +977,6 @@
     </div>
   </div>
 
-  <!-- ========== STEP 7: FINAL ========== -->
   <div class="step" id="step7">
     <div id="confettiContainer" class="confetti-container"></div>
     <div class="stars-container" id="step7Stars"></div>
@@ -1028,7 +1009,6 @@
       <div class="divider-line"></div>
     </div>
 
-    <!-- Deep message lines -->
     <div class="love-letter" id="finalLetter" style="margin-bottom: 1.5rem;">
       <div class="letter-border-glow"></div>
       <span class="letter-deco tl">&#10084;</span>
@@ -1044,7 +1024,6 @@
       <div class="message-line" data-delay="6400" style="margin-top: 0.75rem; font-weight: 700; color: var(--pink); font-size: 1.15rem;">Te amo demasiado mi bebe, quiero casarme contigo <span class="mini-heart">&#10084;</span></div>
     </div>
 
-    <!-- Summary -->
     <div id="summarySection" style="display: none;">
       <h3 style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; text-align: center;">Nuestro plan:</h3>
       <div class="summary-grid" id="summaryGrid">
@@ -1066,7 +1045,6 @@
       </div>
     </div>
 
-    <!-- Promises -->
     <div id="promisesSection" style="display: none; max-width: 450px; width: 100%; margin-top: 1rem;">
       <div class="card" style="text-align: left; padding: 1.5rem 2rem;">
         <h3 style="text-align: center; font-weight: 700; color: var(--pink); margin-bottom: 0.75rem;">Mis promesas para ti:</h3>
@@ -1095,7 +1073,6 @@
       </div>
     </div>
 
-    <!-- Closing -->
     <div id="finalClose" style="display: none; text-align: center; margin-top: 1.5rem;">
       <div class="divider" style="margin: 0 auto 1rem; max-width: 200px;">
         <div class="divider-line"></div>
@@ -1123,7 +1100,6 @@
   </div>
 
   <script>
-    // ======= STATE =======
     let currentStep = 0;
     const totalSteps = 8;
     let chosenGame = '';
@@ -1154,14 +1130,11 @@
       'Pasta': 'Pasta, que romantico mi amor!',
       'Pollo frito': 'Pollo frito! Delicioso!'
     };
-
-    // ======= INIT =======
     createFloatingHearts();
     createStarsInElement('step0Stars', 30);
     updateProgress();
     startNicknameRotation();
 
-    // ======= FLOATING HEARTS =======
     function createFloatingHearts() {
       const container = document.getElementById('heartsContainer');
       for (let i = 0; i < 25; i++) {
@@ -1179,7 +1152,6 @@
       }
     }
 
-    // ======= STARS =======
     function createStarsInElement(elementId, count) {
       const container = document.getElementById(elementId);
       if (!container) return;
@@ -1198,7 +1170,6 @@
       }
     }
 
-    // ======= PROGRESS =======
     function updateProgress() {
       const prog = document.getElementById('progress');
       prog.innerHTML = '';
@@ -1211,7 +1182,6 @@
       }
     }
 
-    // ======= NICKNAMES =======
     function startNicknameRotation() {
       setInterval(() => {
         nickIndex = (nickIndex + 1) % nicknames.length;
@@ -1226,7 +1196,6 @@
       }, 3000);
     }
 
-    // ======= GO TO STEP =======
     function goToStep(step) {
       document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
       document.getElementById('step' + step).classList.add('active');
@@ -1242,7 +1211,6 @@
       }
     }
 
-    // ======= STEP 0: VALENTINE =======
     function handleYes() {
       burstHearts();
       setTimeout(() => goToStep(1), 500);
@@ -1262,7 +1230,6 @@
       noAttempts++;
       btn.textContent = noTexts[Math.min(noAttempts, noTexts.length - 1)];
 
-      // Grow the Yes button
       yesBtnScale += 0.07;
       const yesBtn = document.getElementById('btnYes');
       yesBtn.style.transform = `scale(${Math.min(yesBtnScale, 1.8)})`;
@@ -1270,13 +1237,11 @@
       if (noAttempts >= 6) yesBtn.textContent = 'OBVIO QUE SI!';
       if (noAttempts >= 9) yesBtn.textContent = 'DALE CLICK AQUI MI AMOR!';
 
-      // Show counter
       const counter = document.getElementById('noCounter');
       counter.style.opacity = '1';
       counter.textContent = `Intentos de decir no: ${noAttempts} (jamas lo lograras!)`;
     }
 
-    // ======= STEP 2: LOVE MESSAGE =======
     function animateLoveMessage(containerId, btnId) {
       const container = document.getElementById(containerId);
       const lines = container.querySelectorAll('.message-line');
@@ -1296,7 +1261,6 @@
       }, maxDelay + 800);
     }
 
-    // ======= STEP 3: GAME =======
     function selectGame(game) {
       chosenGame = game;
       document.getElementById('cardFF').classList.toggle('selected', game === 'ff');
@@ -1316,7 +1280,6 @@
       btn.classList.add('bounce-in');
     }
 
-    // ======= STEP 4: GAME PHOTOS =======
     function showGamePhotos() {
       if (chosenGame === 'ff') {
         document.getElementById('ffPhotos').style.display = 'grid';
@@ -1335,7 +1298,6 @@
       }
     }
 
-    // ======= STEP 6: FOOD =======
     function selectFood(chip, food) {
       chosenFood = food;
       document.querySelectorAll('.food-chip').forEach(c => c.classList.remove('selected'));
@@ -1383,7 +1345,6 @@
       setTimeout(() => goToStep(7), 500);
     }
 
-    // ======= STEP 7: FINAL =======
     function animateFinalStep() {
       launchConfetti();
       animateLoveMessage('finalLetter', null);
@@ -1412,7 +1373,6 @@
       }, maxDelay + 3500);
     }
 
-    // ======= CONFETTI =======
     function launchConfetti() {
       const container = document.getElementById('confettiContainer');
       const colors = ['#e8336a', '#f48fb1', '#ff80ab', '#e86833', '#ffd54f', '#ef5350', '#f8bbd0'];
@@ -1443,7 +1403,6 @@
       }
     }
 
-    // ======= BURST HEARTS =======
     function burstHearts() {
       for (let i = 0; i < 20; i++) {
         const heart = document.createElement('div');
